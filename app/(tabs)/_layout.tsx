@@ -8,6 +8,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
         }}
       />
@@ -15,7 +16,17 @@ export default function TabLayout() {
         name="settings"
         options={{
           title: 'Settings',
+          tabBarLabel: 'Settings',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />,
+          tabBarBadge: 3,
         }}
       />
     </Tabs>
